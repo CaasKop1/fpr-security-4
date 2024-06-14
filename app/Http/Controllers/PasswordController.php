@@ -39,7 +39,7 @@ class PasswordController extends Controller
                 'string',
                 'min:8',
                 'confirmed',
-                'regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d|\W).+$/'
+                'regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/'
             ],
         ], [
             'password.regex' => 'The password must be at least 8 characters long and include at least one lowercase letter, one uppercase letter, and one digit and special character.',
